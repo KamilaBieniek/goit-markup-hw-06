@@ -135,7 +135,7 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
 .services-list {display: flex; flex-wrap: wrap; column-gap: 24px; row-gap: 48px;}
 .li-app {width: calc((100% - 48px)/3);}
 .apps {padding: 32px 16px; border: 1px solid #e7e9fc; border-top: none;}
-.footer {background-color: #2E2F42; display: flex; padding: 100px 0;}
+.footer {background-color: #2E2F42; display: flex; padding: 100px 0; margin: 0 auto;}
 .span-footer {color: #F4F4FD;}
 .text-footer {color: #F4F4FD; line-height: 1.5; letter-spacing: 0.02em;
     width: 264px;}
@@ -272,4 +272,122 @@ border: none;}
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.email-box {
+    background-color: transparent;
+    fill: #ffffff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0,04em;
+    font-weight: 400;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    padding-top: 4px;
+}
+
+.div-subscribe {
+    display: flex;
+    margin-top: 16px;
+    gap: 24px;
+}
+.btn-subscribe {
+    background-color: #4D5AE5;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0,04em;
+    width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    align-items: center;
+}
+.sub-icon {
+    padding-top: 8px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 72px 24px 0 24px;
+    font-size: 12px;
+    line-height: 1,2;
+    letter-spacing: 0,04em;
+    color: #8e8f99;
+    row-gap: 18px;
+}
+.form-wrapper {
+    border: 1px solid #2E2F42;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 40px;
+    padding-left: 16px;
+}
+.form-wrapper:focus-within {
+    border-color: #4D5AE5;
+    fill: #4D5AE5;
+    overflow: hidden; 
+}
+.form-wrapper input {
+    border: none;
+    padding: 0.5em;
+    flex-grow: 1;
+}
+.form-wrapper input:focus {
+outline: none;
+}
+.form-comment {
+    border: 1px solid #2E2F42;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.form-comment:focus-within {
+    border-color: #4D5AE5;
+}
+.form-comment textarea {
+    font-family: sans-serif;
+    color: #8e8f99;
+    font-size: 12px;
+    line-height: 1,2;
+    letter-spacing: 0,04em;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+.form-comment textarea:focus {
+    outline: none;
+}
+.form-text {
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.send-button {
+    width: 169px;
+    height: 56px;
+    margin-left: 95px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1,5;
+    letter-spacing: 0,04em;
+}
+.link-policy {
+    color: #4D5AE5;
 }
