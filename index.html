@@ -350,17 +350,18 @@
                         </li>
                     </ul>
                  </div>
-                 <form name="subscribe-form" autocomplete="on" novalidate>
-                    <p class="subscribe">Subscribe</p>
-                    <div class="div-subscribe">
-                        <label>
-                            <input class="email-box" type="email" name="email" placeholder="E-mail"/>
-                        </label>
-                        <button class="btn-subscribe" type="submit">Subscribe
-                            <svg class="sub-icon" width="24" height="24">
-                                <use href="./images/sub.svg#sub"></use>
-                            </svg>
-                        </button>
+                 <div class="div-form">
+                        <p class="subscribe">Subscribe</p>
+                        <form name="subscribe-form" autocomplete="on" novalidate class="subscribe-form">
+                            <label class="email-box">
+                                <input class="email-input" type="email" name="email" placeholder="E-mail"/>
+                            </label>
+                            <button class="btn-subscribe" type="submit">Subscribe
+                                <svg class="sub-icon" width="24" height="24">
+                                    <use href="./images/sub.svg#sub"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>  
                 </form>
         </div>  
@@ -372,45 +373,48 @@
                     <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
                 </svg>
             </button>
+            <p class="form-text">Leave your contacts and we will call you back</p>
             <form class="contact-form" name="contact-form" autocomplete="on" novalidate>
-                <p class="form-text">Leave your contacts and we will call you back</p>
-                <label for="name">
-                    Name
+                <div class="div-form-contact">
+                    <label for="user-name" class="label-form">
+                    Name</label>
                     <div class="form-wrapper">
-                        <svg class="form-icon" width="18" height="18">
+                        <input type="text" name="user-name" id="user-name" class="contact-input">
+                        <svg class="form-icon" width="18" height="24">
                             <use href="./images/symbols.svg#person"/>
                         </svg>
-                        <input type="text" name="name" id="name">
                     </div>
-                </label>
-                <label for="tel">
-                    Phone
+                </div>
+                <div class="div-form-contact">
+                   <label for="tel" class="label-form">
+                    Phone </label>
                     <div class="form-wrapper"> 
-                        <svg class="form-icon" width="18" height="24">
+                      <input type="tel" name="tel" id="tel" class="contact-input">
+                       <svg class="form-icon" width="18" height="24">
                             <use href="./images/symbols.svg#phone"/>
                         </svg>
-                        <input type="tel" name="tel" id="tel">
                     </div>
-                </label>
-                <lebel for="email">
-                    Email
+               </div>
+                <div class="div-form-contact">
+                    <label for="email" class="label-form">
+                    Email</label>
                     <div class="form-wrapper">
+                        <input type="email" name="email" id="email" class="contact-input">
                         <svg class="form-icon" width="18" height="24">
                             <use href="./images/symbols.svg#email"/>
                         </svg>
-                        <input type="email" name="email" id="email">
                     </div>
-                </lebel>
-                <lebel for="comment">
-                    Comment
-                    <div class="form-comment">
-                    <textarea name="comment" rows="5" placeholder="Text input" id="comment"></textarea>
-                    </div>
-                </lebel>
-                <label>
-                    <input class="policy" type="checkbox" name="policy" value="policy">
+                </div>
+                <div class="div-comment">
+                    <label for="user-comment" class="label-form">
+                    Comment</label>
+                    <textarea name="user-comment" rows="5" placeholder="Text input" id="user-comment" class="textarea"></textarea>
+                </div>
+                <div class="div-policy">
+                    <input class="policy" type="checkbox" name="user-privacy" value="true" id="user-privacy" class="visually-hidden">
+                    <label class="label-policy">
                     I accept the terms and conditions of the <a class="link-policy" href="">Privace Policy</a>
-                </label> 
+                    </label> 
                 <button class="send-button" type="submit">Send</button>
             </form>
         </div>
