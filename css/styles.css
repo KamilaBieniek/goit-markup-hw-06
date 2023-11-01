@@ -279,6 +279,8 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    font-weight: 500;
 }
 .email-input {
     background-color: transparent;
@@ -304,7 +306,7 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
 .btn-subscribe {
     background-color: #4D5AE5;
     color: #ffffff;
-    font-family: 'Roboto' sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -321,6 +323,9 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
 .sub-icon {
     margin-left: 16px;
 }
+.div-form-contact {
+    margin-bottom: 8px;
+}
 .label-form {
     font-size: 12px;
     line-height: 1.17;
@@ -328,7 +333,6 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
     color: #8e8f99;
     display: block;
     margin-bottom: 4px;
-    margin-top: 8px;
 }
 .form-wrapper {
     position: relative;
@@ -427,4 +431,18 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    display: block;
+}
+.span-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46,47,66,0.4);
+    border-radius: 2px;
+    transition-property: background-color, border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
 }
