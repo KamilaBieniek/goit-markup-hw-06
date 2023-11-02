@@ -450,7 +450,7 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
     justify-content: center;
     fill: transparent;
 }
-.div-policy input[type="checkbox"]:checked + svg {
+.div-policy input[type="checkbox"]:checked + span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
