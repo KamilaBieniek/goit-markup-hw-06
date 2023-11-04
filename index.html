@@ -373,12 +373,12 @@
                 </svg>
             </button>
             <p class="form-text">Leave your contacts and we will call you back</p>
-            <form class="contact-form" name="contact-form" autocomplete="on" novalidate>
+            <form class="contact-form" name="contact-form" autocomplete="on">
                 <div class="div-form-contact">
                     <label for="user-name" class="label-form">
                     Name</label>
                     <div class="form-wrapper">
-                        <input type="text" name="user-name" id="user-name" class="contact-input">
+                        <input type="text" name="user-name" id="user-name" class="contact-input" required />
                         <svg class="form-icon" width="18" height="24">
                             <use href="./images/symbols.svg#person"/>
                         </svg>
@@ -386,9 +386,9 @@
                 </div>
                 <div class="div-form-contact">
                    <label for="tel" class="label-form">
-                    Phone </label>
+                    Phone</label>
                     <div class="form-wrapper"> 
-                      <input type="tel" name="tel" id="tel" class="contact-input">
+                      <input type="tel" name="tel" id="tel" class="contact-input" required />
                        <svg class="form-icon" width="18" height="24">
                             <use href="./images/symbols.svg#phone"/>
                         </svg>
@@ -398,7 +398,7 @@
                     <label for="email" class="label-form">
                     Email</label>
                     <div class="form-wrapper">
-                        <input type="email" name="email" id="email" class="contact-input">
+                        <input type="email" name="email" id="email" class="contact-input" required />
                         <svg class="form-icon" width="18" height="24">
                             <use href="./images/symbols.svg#email"/>
                         </svg>
@@ -410,7 +410,7 @@
                     <textarea name="user-comment" rows="5" placeholder="Text input" id="user-comment" class="textarea"></textarea>
                 </div>
                 <div class="div-policy">
-                    <input type="checkbox" name="user-privacy" value="true" id="user-privacy" class="visually-hidden">
+                    <input type="checkbox" name="user-privacy" value="true" id="user-privacy" class="visually-hidden checkbox" required>
                     <label for="user-privacy" class="label-policy">
                         <span class="span-checkbox">
                             <svg class="icon-box" width="10" height="8">

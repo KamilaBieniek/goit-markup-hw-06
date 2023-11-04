@@ -435,7 +435,6 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: block;
 }
 .span-checkbox {
     width: 16px;
@@ -449,9 +448,10 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
-.div-policy input[type="checkbox"]:checked + .span-checkbox {
-    background-color: #404bbf;
+.checkbox:checked + .label-policy .span-checkbox {
+    background-color: var(--marka-color);
     border: none;
-    fill: #F4F4FD;
+    fill: var(--rectangle);
 }
